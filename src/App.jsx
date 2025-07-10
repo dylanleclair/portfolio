@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import qnx_logo from '/qnx_logo.jpg'
 import './App.css';
+import AsciiArt from './AsciiArt';
 
 
 /**
@@ -30,20 +31,39 @@ function App() {
 
   return (
       <div className='container'>
-
+        
         <header>
           <div className='header'>
             <h1>dylan leclair</h1>
-            <div>software developer • calgary, alberta</div>
-            <div>b.sc computer science @ ucalgary</div>
+            
+              <div>
+              {/* <AsciiArt></AsciiArt> */}
+                <div>software developer • calgary, alberta</div>
+                <div>b.sc computer science @ ucalgary</div>
+                <a href="mailto:dleclaircs@gmail.com">dleclaircs@gmail.com</a>
+              </div>
+
           </div>
         </header>
 
         <main>
           <section className='section section-intro'>
             <div className="content">
-              <div className='subheader'>mission</div>
-              <div className='w-100'>
+              <div className='subheader'>who i am</div>
+
+            <div className='profile'>
+              <div>
+               <img className='headshot' src="/headshot.jpg"></img>
+
+              </div>
+
+              <div className='profile-desc'>
+                <div className='large'>Nice to meet you - I'm Dylan.</div>
+                <div>When I'm not programming (or more likely, debugging), you can find me walking my dog, at the climbing gym, playing counter-strike, reading or geeking out over keyboards.</div>
+              </div>
+
+            </div>
+                          <div className='w-100'>
                 <p>In just 3.5 years of experience, I've worked on:</p>
                 <ul>
                   <li>control systems to coordinate a fleet of robots</li>
@@ -66,16 +86,12 @@ function App() {
                 </div>
                 <div className='job-desc'>
                   <ul>
-                    <li>Prepared for a new release of QNX Software Center by writing a code signing and verification utility and integrating it
-into server endpoints to replace a costly third party tool.</li>
-                    <li>Designed, iterated on, and built a series of attractive UI to fetch, analyze and integrate live data from QNX systems
-                    into VS Code using React & TypeScript in an agile environment.</li>
-                    <li>Upgraded the Momentics IDE and its System Profiler to support the release of QNX 8.0, in addition to refactoring
-and optimizing statistics calculations related to thread states, CPU Usage and inter-process communication.</li>
-                    <li>Cemented the quality of multiple products by fixing bugs and identifying the root cause of complex problems in
-large-scale Java and TypeScript codebases, improving code coverage and adding new test cases along the way.</li>
-                    <li>Automated workflows by writing Python and shell scripts, enabling on-time delivery of a tool developed by another
-team and streamlining data extraction from C/C++ code for use in the QNX System Profiler.</li>
+                    <li>Built a series of attractive UI to fetch, analyze and integrate live data from QNX systems
+                    into VS Code using React & TypeScript.</li>
+                    <li>Upgraded the Momentics IDE and its System Profiler to support QNX 8.0.</li>
+                    <li>Optimized complex calculations related to thread states and CPU usage.</li>
+                    <li>Fixed bugs in huge Java and TypeScript codebases, improving code coverage and adding new test cases along the way.</li>
+                    <li>Automated workflows by writing Python and shell scripts.</li>
                   </ul>
                 </div>
                 
