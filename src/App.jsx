@@ -107,7 +107,6 @@ function App() {
 
             <div className="content">
               <div className='subheader'>projects</div>
-              <div className='w-100'>software is the beating heart of the 21st century</div>
             </div>
 
           </section>
